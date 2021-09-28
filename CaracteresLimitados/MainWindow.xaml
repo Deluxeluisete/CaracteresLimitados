@@ -1,0 +1,21 @@
+﻿<Window x:Class="CaracteresLimitados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaracteresLimitados"
+        mc:Ignorable="d"
+        Title="CaracteresLimitados" Height="450" Width="800" Icon="Assets/128.ico">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFBF7F7" Offset="0"/>
+                <GradientStop Color="#FFF90D0D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="MensajeLabel" AcceptsReturn="True" HorizontalAlignment="Left" Height="355" Margin="44,33,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="712" TextChanged="MensajeLabel_TextChanged" />
+
+        <TextBlock x:Name="ContadorTextBlock" HorizontalAlignment="Left" Margin="733,393,0,-17" TextWrapping="Wrap" Text="0/140" VerticalAlignment="Top" FontSize="16" Width="59"/>
+
+    </Grid>
+</Window>
